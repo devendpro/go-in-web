@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Template map</title>
+</head>
+<body>
+    <h1> Sábios</h1>
+    <ul>
+        {{range $indice, $valor := .}}
+        <li>{{$indice}} - {{$valor}}</li>
+        {{end}}
+    </ul>
+</body>
+</html>
