@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Template com 2 structs</title>
+</head>
+<body>
+    <ul>
+        {{range .Sabios}}
+        <li>{{.Nome}}  -  {{.Lema}}</li>
+        {{end}}
+    </ul>
+    <ul>
+        {{range .Carros}}
+        <li>{{.Marca}}  -  {{.Modelo}}  - {{.Portas}}</li>
+        {{end}}
+    </ul>
+    
+</body>
+</html>
