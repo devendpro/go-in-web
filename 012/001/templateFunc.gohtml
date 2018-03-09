@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Template usando funções</title>
+</head>
+<body>
+    <ul>
+        <h1 style="font-size:14px;">CAIXA ALTA</h1>
+        {{range .}}
+        <li>{{uc .Nome}}</li>
+        {{end}}
+    </ul>
+    <ul>
+        <h2 style="font-size:14px;">3 Primeiras letras</h2>
+        {{range .}}
+        <li>{{str3 .Nome}}</li>
+        {{end}}
+    </ul>
+</body>
+</html>
