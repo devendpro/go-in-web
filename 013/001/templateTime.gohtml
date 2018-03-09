@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Template - Formatando data</title>
+</head>
+<body>
+
+    {{range .}}
+    <h1 style="font-size:16px">Data sem formatação: {{.Datahora}}</h1>
+    
+    <h2 style="font-size:16px">Data formatada: {{fDateMDY .Datahora}}</h2>
+
+    <h3 style="font-size:16px">Data formatada: {{caixaAlta .Frase}}</h3>
+    {{end}}
+</body>
+</html>
