@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Template - Global Functions</title>
+</head>
+<body>
+
+    {{index . 0}} <br>
+    {{index . 1}}
+    {{index . 2}}
+    {{index . 3}}
+    {{index . 4}}
+    {{index . 5}}
+    {{index . 0}}
+
+    <!-- 
+        index 
+        uma funcao que você pode usar dentro
+        do template. É uma "função global predefinida".
+
+        Index retorna o resultado do indice. É o primeiro
+        parametro dos seguintes parametros.
+        Estes "index x 1 2 3", é na sintax do GO
+        x[1][2][3]. Cada item indexado pode ser um map
+        slice ou array.
+
+        https://godoc.org/text/template#hdr-Functions
+     -->
+
+     Este é um comentário de template GO
+     {{/*(index .Wisdom 3)*/}}
+    
+</body>
+</html>

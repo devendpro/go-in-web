@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Template - Global Functions</title>
+</head>
+<body>
+    Exemplo #1 </br>
+    {{range .}}
+        {{.}} </br>
+    {{end}}
+    </br>
+    Exemplo #2</br>
+    {{if .}}
+        Exemplo #2  - {{.}}</br>
+    {{end}}
+    </br>
+    Exemplo #3</br>
+    {{range .}}
+        {{if .Nome}}
+            Exemplo #3 - {{.Nome}}</br>
+        {{end}}
+    {{end}}
+
+    </br>
+    Exemplo #4</br>
+    {{range .}}
+        {{if and .Nome .Admin}}
+            Exemplo #4 - Nome: {{.Nome}}</br>
+            Exemplo #4 - Lema: {{.Lema}}</br>
+            Exemplo #4 - Admin: {{.Admin}}</br>
+        {{end}}
+    {{end}}
+</body>
+</html>

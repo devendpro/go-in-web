@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Template - Funções Globais Pré-definidas</title>
+</head>
+<body>
+
+    #Exemplo 1 </br>
+    {{if gt .Placar1 .Placar2}}
+        PLACAR 1 > PLACAR 2
+    {{end}}
+
+    </br>    
+    #Exemplo 2 </br>
+    {{if lt .Placar1 .Placar2}}
+        PLACAR 1 < PLACAR 2
+    {{end}}
+
+    </br>
+    #Exemplo 3 </br>
+    {{if eq .Placar1 .Placar2}}
+        PLACAR 1 = PLACAR 2
+    {{end}}
+
+    </br>
+    #Exemplo 4 </br>
+    {{if lt .Placar1 10}}
+        Último Placar: PLACAR 1 < 10
+    {{end}}
+    
+</body>
+</html>
