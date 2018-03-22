@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"html/template"
 	"log"
 	"net/http"
@@ -17,7 +18,9 @@ func main() {
 
 	http.Handle("/public/", http.StripPrefix("/public", http.FileServer(http.Dir("public"))))
 
-	http.ListenAndServe(":8080", nil)
+	fmt.Println("Garçon: servindo arquivos...")
+
+	http.ListenAndServe(":3001", nil)
 }
 
 func index(res http.ResponseWriter, req *http.Request) {
